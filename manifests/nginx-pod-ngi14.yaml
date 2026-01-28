@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ngi14
+  namespace: default
+spec:
+  containers:
+  - image: nginx:latest
+    name: nginx
+    ports:
+    - containerPort: 80
+      protocol: TCP
